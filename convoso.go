@@ -4,6 +4,7 @@ import "github.com/Sirupsen/logrus"
 
 var log *logrus.Logger
 var apiKEY string
+var listMapper map[string]int
 
 // Init initialize this package. This must be called once with a valid instance of a Config struct
 func Init(c Config) error {
@@ -14,6 +15,7 @@ func Init(c Config) error {
 
 	apiKEY = c.APIKey
 	log = c.Logger
+	listMapper = c.ListMapper
 
 	return nil
 }

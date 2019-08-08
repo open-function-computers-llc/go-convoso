@@ -9,8 +9,9 @@ import (
 // Config a struct that we can fill from an external location to bootstrap this
 // package
 type Config struct {
-	APIKey string
-	Logger *logrus.Logger
+	APIKey     string
+	Logger     *logrus.Logger
+	ListMapper map[string]int
 }
 
 func (c Config) validate() error {
