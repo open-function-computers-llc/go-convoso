@@ -3,7 +3,7 @@ package convoso
 import (
 	"errors"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 )
 
 // Config a struct that we can fill from an external location to bootstrap this
